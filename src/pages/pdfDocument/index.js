@@ -26,6 +26,12 @@ export default function pdfDocument({ history }) {
     }
   });
 
+  function sleep(ms) {
+    return new Promise(resolve => {
+      setTimeout(resolve, ms)
+    })
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -42,9 +48,10 @@ export default function pdfDocument({ history }) {
     }
 
     const response = await api.post('/certificate', certidao);
-
+    await sleep(30000);
     console.log('asdasd', response);
     console.log(response.data.success);
+    
     if (response.data.success == true) {
       history.push('/Start');
     }
