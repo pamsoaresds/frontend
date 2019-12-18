@@ -131,3 +131,40 @@ body, input, button, select, tr, th {
   background: #e14f50;
   
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 50%;
+  height: auto;
+  top:50%;
+  left:50%;
+  border-radius: 2px;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.input-modal {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 15px 15px 15px 15px;
+  font-size: 16px;
+  width: 100%;
+}
