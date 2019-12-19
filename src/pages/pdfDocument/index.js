@@ -48,13 +48,13 @@ export default function pdfDocument({ history }) {
     }
 
     const response = await api.post('/certificate', certidao);
-    await sleep(50000);
+    await sleep(10000);
     console.log('asdasd', response);
     console.log(response.data.success);
     
-    if (response.data.success == true) {
+   // if (response.data.success == true) {
       history.push('/Start');
-    }
+    //}
 
 
 

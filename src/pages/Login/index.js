@@ -59,7 +59,7 @@ export default function Login({ history }) {
     return (
         <>
             <p>
-                Teste do teste
+                Login
             </p>
 
             <form onSubmit={handleSubmit}>
