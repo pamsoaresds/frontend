@@ -48,7 +48,7 @@ export default function pdfDocument({ history }) {
     }
 
     const response = await api.post('/certificate', certidao);
-    await sleep(10000);
+    await sleep(1000);
     console.log('asdasd', response);
     console.log(response.data.success);
     
